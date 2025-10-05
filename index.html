@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Tic Tac Toe</h1>
+            <p class="tag">
+                Play Tic Tac Toe
+            </p>
+        </header>
+
+        <section class="controls">
+            <div class="mode">
+                <label>
+                    <input type="radio" name="mode" value="pvp" checked>
+                    2 Players (Local)
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="cpu">
+                    Play vs CPU (Easy)
+                </label>
+            </div>
+
+            <div class="scoreboard" aria-live="polite">
+                <div>Player X: <span id="scoreX">0</span></div>
+                <div>PlayerO: <span id="scoreO">0</span></div>
+                <div>Draws: <span id="scoreDraw">0</span></div>
+            </div>
+
+            <div class="buttons">
+                <button id="restart">Restart Round</button>
+                <button id="resetScores">Reset Scores</button>
+            </div>
+        </section>
+
+        <section class="board-area">
+            <div id="status" class="status">Turn: <strong id="turn">X</strong></div>
+
+            <div id="board" class="board" role="grid" aria-label="Tic Tac toe Board">
+                <button class="cell" data-index="0" aria-label="cell 1" role="gridcell"></button>
+                <button class="cell" data-index="1" aria-label="cell 2" role="gridcell"></button>
+                <button class="cell" data-index="2" aria-label="cell 3" role="gridcell"></button>
+                <button class="cell" data-index="3" aria-label="cell 4" role="gridcell"></button>
+                <button class="cell" data-index="4" aria-label="cell 5" role="gridcell"></button>
+                <button class="cell" data-index="5" aria-label="cell 6" role="gridcell"></button>
+                <button class="cell" data-index="6" aria-label="cell 7" role="gridcell"></button>
+                <button class="cell" data-index="7" aria-label="cell 8" role="gridcell"></button>
+                <button class="cell" data-index="8" aria-label="cell 9" role="gridcell"></button>
+            </div>
+
+            <p class="hint">Enjoy the game!</p>
+        </section>
+
+        <footer class="footer">
+            <small>Created by Adrian</small>
+        </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
